@@ -24,7 +24,7 @@ class UserStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'nik' => 'required|unique:users',
+            'nik' => 'required|unique:users|numeric',
             'fullname' => 'required'
         ];
     }
@@ -34,6 +34,7 @@ class UserStoreRequest extends FormRequest
         return [
             'nik.required' => 'NIK diperlukan',
             'nik.unique' => 'NIK sudah terpakai',
+            'nik.numeric' => 'NIK harus berupa angka',
             'fullname.required' => 'Nama lengkap diperlukan'
         ];
     }

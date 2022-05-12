@@ -82,6 +82,11 @@
         </form>
     </div>
     <div class="w-full mt-5 rounded bg-white shadow-md">
+        @if ($journeys->isEmpty())
+            <div class="w-full flex justify-center items-center h-[100px]">
+                <span class="font-semibold text-tuna">Anda tidak memiliki Catatan Perjalanan</span>
+            </div>
+        @else
         <table class="w-full">
             <thead>
                 <tr class="border-b-[0.5px] border-[#A4A4A4]">
@@ -223,6 +228,7 @@
                 @endforeach
             </tbody>
         </table>
+        @endif
         <div class="px-6 py-4">
             {{ $journeys->links('pagination::tailwind') }}
         </div>

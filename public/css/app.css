@@ -653,6 +653,9 @@ select {
 .mb-9 {
   margin-bottom: 2.25rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -664,9 +667,6 @@ select {
 }
 .-ml-px {
   margin-left: -1px;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .block {
   display: block;
@@ -709,6 +709,15 @@ select {
 }
 .h-5 {
   height: 1.25rem;
+}
+.h-\[100px\] {
+  height: 100px;
+}
+.h-4 {
+  height: 1rem;
+}
+.h-\[50px\] {
+  height: 50px;
 }
 .w-screen {
   width: 100vw;
@@ -886,17 +895,13 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.px-96 {
-  padding-left: 24rem;
-  padding-right: 24rem;
-}
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-96 {
+  padding-left: 24rem;
+  padding-right: 24rem;
 }
 .pr-48 {
   padding-right: 12rem;
@@ -927,6 +932,10 @@ select {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -1020,9 +1029,6 @@ select {
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.last\:border-b-0:last-child {
-  border-bottom-width: 0px;
 }
 .odd\:bg-gray-200:nth-child(odd) {
   --tw-bg-opacity: 1;

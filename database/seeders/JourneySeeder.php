@@ -17,6 +17,5 @@ class JourneySeeder extends Seeder
      */
     public function run()
     {
-
     }
 }
